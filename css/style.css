@@ -1,0 +1,356 @@
+/*
+
+
+	(un)Conscious Cloud CSS
+	
+	
+*/
+
+/* colors (top >> bottom : lightest >> darkest)
+----------------------------------------------------------------------------------------------------*/
+
+
+/* yellow */
+#cs_lemonbee_c001_type {color:#F2D10E;}
+#cs_lemonbee_c001_bg, #error_bg {background-color:#F2D10E;}
+
+/* yellow (brown) */
+#cs_lemonbee_c002_type {color:#CCB13E;}
+#cs_lemonbee_c002_bg {background-color:#CCB13E;}
+
+/* base (light brown) */
+#cs_lemonbee_c003_type {color:#99834A;}
+#cs_lemonbee_c003_bg {background-color:#99834A;}
+
+/* brown */
+#cs_lemonbee_c004_type {color:#73634A;}
+#cs_lemonbee_c004_bg {background-color:#73634A;}
+
+/* black (brown) */
+#cs_lemonbee_c005_type {color:#403A3F;}
+#cs_lemonbee_c005_bg {background-color:#403A3F;}
+
+/* colors */
+/*
+purple: #65356B
+red: #AB434F
+orange: #C76347
+yellowOrange: #FFA24C
+blue: #519183
+*/
+
+
+/* html tags
+----------------------------------------------------------------------------------------------------*/
+html, body {
+	padding:0;
+	margin:0;
+}
+
+body {
+	font: normal 62.5% Georgia, serif;
+	line-height: 1.4;
+	color:#403A3F;
+	background-color:#FFFFFF;
+}
+
+/* type formats
+----------------------------------------------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 0;
+	border-bottom: 0;
+}
+
+a {
+	font-size:1.4em;
+	font-weight: normal;
+	border: none;
+	color: #524E50;
+	display:block;
+	position:relative;
+	text-decoration:none;
+	outline: none;
+}
+a:focus {
+
+}
+a:active {
+
+}
+a:hover {
+	color:#222022;
+}
+
+h1, #h1 {
+	font-size: 5em;
+	font-weight:bold;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding-bottom:10px;
+	line-height: 0.9em;
+	border-bottom: solid 1px;
+}
+
+h2, #h2 {
+	font-size:2em;
+	font-weight:bold;
+	margin:0px;
+	padding:0px;
+}
+
+h3, #h3 {
+	font-size: 2em;
+	font-family: Georgia, serif;
+	font-weight: lighter;
+	font-style: italic;
+	margin-bottom:0px;
+}
+
+h4, #h4 {
+	margin:0;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size: 0.9em;
+	font-family: Georgia, serif;
+	font-weight: lighter;
+	font-style: italic;
+}
+
+h5, #h5 {
+	font-size: 10em;
+	font-weight:bold;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding-bottom:10px;
+	line-height: 0.9em;
+}
+
+
+p {
+	font-size: 1.4em;
+}
+
+strong {
+	font-weight:bold;
+}
+
+#uppercase {
+	text-transform: uppercase;
+}
+
+#lowercase {
+	text-transform: lowercase;
+}
+
+
+/* custom classes
+----------------------------------------------------------------------------------------------------*/
+#container {
+	display: inline;
+	float: left;
+	position: relative;
+	padding:30px;
+}
+
+#bg_source_image {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+	z-index: -9999;
+}
+
+.w_space_10 {
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.w_space_20 {
+	padding-left:20px;
+	padding-right:20px;
+}
+
+.h_space_10 {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.h_space_20 {
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+#note {
+	background-color:#403A3F;
+	color:#FFFFFF;
+	padding:10px;
+	font-size:1.2em;
+	font-weight: lighter;
+	font-style: italic;
+}
+
+#credits {
+	display: none;
+}
+
+
+/*
+	Variable Grid System.
+	Learn more ~ http://www.spry-soft.com/grids/
+	Based on 960 Grid System - http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1,
+.grid_2,
+.grid_3 {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-right: 10px;
+}
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+	margin-left: 0;
+}
+
+.omega {
+	margin-right: 0;
+}
+
+/* Grid >> 3 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1 {
+	width:300px;
+}
+
+.grid_2 {
+	width:620px;
+}
+
+.grid_3 {
+	width:940px;
+}
+
+
+
+/* Prefix Extra Space >> 3 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.prefix_1 {
+	padding-left:310px;
+}
+
+.prefix_2 {
+	padding-left:620px;
+}
+
+
+
+/* Suffix Extra Space >> 3 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.suffix_1 {
+	padding-right:310px;
+}
+
+.suffix_2 {
+	padding-right:620px;
+}
+
+
+/* Margin Space >> 3 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.margin_1 {
+	left:310px;
+}
+
+.margin_2 {
+	left:620px;
+}
+
+
+
+/* Push Space >> 3 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.push_1 {
+	left:310px;
+}
+
+.push_2 {
+	left:620px;
+}
+
+
+
+/* Pull Space >> 3 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.pull_1 {
+	left:-310px;
+}
+
+.pull_2 {
+	left:-620px;
+}
+
+
+
+
+/* Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
